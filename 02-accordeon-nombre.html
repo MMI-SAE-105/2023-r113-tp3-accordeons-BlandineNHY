@@ -12,15 +12,15 @@
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt consectetur saepe accusantium et. Ducimus magnam aut alias voluptatem. Necessitatibus consectetur, temporibus at mollitia distinctio magni esse! Non earum minus commodi!</p>
     <div class="accordeon">
       <section x-data="{isOpen1:false}">
-        <button>bouton 1</button>
+        <button @click="isOpen1 = !isOpen1">bouton 1</button>
         <p x-show="isOpen1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas similique esse consequatur eius officia soluta, voluptates cupiditate facilis, repudiandae deserunt odit praesentium placeat, suscipit distinctio corporis commodi blanditiis aut autem!</p>
       </section>
       <section x-data="{isOpen2:false}">
-        <button>bouton 2</button>
+        <button @click="isOpen2 = !isOpen2">bouton 2</button>
         <p x-show="isOpen2">Veritatis, facilis? Dolore atque porro, eligendi quod incidunt soluta numquam nobis, vel possimus pariatur quasi, iste repudiandae eveniet fugiat? Voluptatibus recusandae maiores cupiditate beatae magnam distinctio aspernatur vero vitae quos?</p>
       </section>
       <section x-data="{isOpen3:false}">
-        <button>bouton 3</button>
+        <button @click="isOpen3 = !isOpen3">bouton 3</button>
         <p x-show="isOpen3">Aliquam delectus, incidunt provident unde sit voluptatum eaque ipsam enim quisquam impedit, hic eum velit placeat odit reprehenderit inventore facere similique deleniti! Nemo magnam porro quisquam natus quasi quod deserunt.</p>
       </section>
     </div>
