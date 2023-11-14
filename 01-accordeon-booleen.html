@@ -14,19 +14,19 @@
         <button @click="isOpen1 = !isOpen1"> 
           bouton 1
         </button>
-        <p x-show="isOpen1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis illum eaque, blanditiis quis earum, et atque fuga ipsa, deserunt dolores itaque. Doloribus reiciendis assumenda vitae. Nobis, facere incidunt. Beatae, dolor.</p>
+        <p x-show="isOpen1" x-transition.scale.origin.top>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis illum eaque, blanditiis quis earum, et atque fuga ipsa, deserunt dolores itaque. Doloribus reiciendis assumenda vitae. Nobis, facere incidunt. Beatae, dolor.</p>
      </section>
       <section x-data="{isOpen2:false}">
         <button @click="isOpen2 = !isOpen2">
           bouton 2
         </button>
-        <p  x-show="isOpen2">Nam dolorem corrupti consequuntur, saepe atque laborum, maiores sed fuga, cupiditate incidunt illum at debitis adipisci asperiores veritatis magnam culpa! Iusto magnam aperiam earum ad ipsam veritatis libero illo enim!</p>
+        <p  x-show="isOpen2" x-transition.scale.origin.top>Nam dolorem corrupti consequuntur, saepe atque laborum, maiores sed fuga, cupiditate incidunt illum at debitis adipisci asperiores veritatis magnam culpa! Iusto magnam aperiam earum ad ipsam veritatis libero illo enim!</p>
       </section>
       <section x-data="{isOpen3:false}">
-        <button  @click="isOpen3 = !  isOpen3">
+        <button  @click="isOpen3 = !isOpen3">
           bouton 3
         </button>
-        <p x-show="isOpen3">Enim dolores quia nesciunt dolorem sequi, eum repudiandae culpa! Aut, quasi! Aut magni rerum esse molestiae cupiditate! Minus quas omnis, facere unde atque molestias natus saepe nam, quisquam optio debitis!</p>
+        <p x-show="isOpen3" x-transition.scale.origin.top>Enim dolores quia nesciunt dolorem sequi, eum repudiandae culpa! Aut, quasi! Aut magni rerum esse molestiae cupiditate! Minus quas omnis, facere unde atque molestias natus saepe nam, quisquam optio debitis!</p>
       </section>
     </div>
 
