@@ -5,24 +5,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Accordéon avec des booléens</title>
   </head>
   <body>
     <div class="accordeon">
-      <section x-data="{isOpen:false}">
-        <button @click="isOpen = ! isOpen"> 
+      <section >
+      <div x-data="{isOpen1:false}" > 
+        <button @click="!isOpen"> 
           bouton 1
         </button>
-        <p  x-show="isOpen">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis illum eaque, blanditiis quis earum, et atque fuga ipsa, deserunt dolores itaque. Doloribus reiciendis assumenda vitae. Nobis, facere incidunt. Beatae, dolor.</p>
-      </section>
-      <section x-data="{isOpen:false}">
-        <button @click="isOpen = ! isOpen">
+        <p x-show="isOpen">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis illum eaque, blanditiis quis earum, et atque fuga ipsa, deserunt dolores itaque. Doloribus reiciendis assumenda vitae. Nobis, facere incidunt. Beatae, dolor.</p>
+      </div>
+     </section>
+      <section x-data="{isOpen2:false}">
+        <button @click="isOpen2 = !isOpen">
           bouton 2
         </button>
         <p  x-show="isOpen">Nam dolorem corrupti consequuntur, saepe atque laborum, maiores sed fuga, cupiditate incidunt illum at debitis adipisci asperiores veritatis magnam culpa! Iusto magnam aperiam earum ad ipsam veritatis libero illo enim!</p>
       </section>
-      <section x-data="{isOpen:false}">
-        <button  @click="isOpen = ! isOpen">
+      <section x-data="{isOpen3:false}">
+        <button  @click="isOpen3 = !  isOpen">
           bouton 3
         </button>
         <p x-show="isOpen">Enim dolores quia nesciunt dolorem sequi, eum repudiandae culpa! Aut, quasi! Aut magni rerum esse molestiae cupiditate! Minus quas omnis, facere unde atque molestias natus saepe nam, quisquam optio debitis!</p>
