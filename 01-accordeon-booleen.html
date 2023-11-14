@@ -9,22 +9,22 @@
   <body>
     <div class="accordeon">
       <section x-data="{isOpen:false}">
-        <button> @click="isOpen = ! isOpen"
+        <button @click="isOpen = ! isOpen"> 
           bouton 1
         </button>
         <p  x-show="isOpen">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis illum eaque, blanditiis quis earum, et atque fuga ipsa, deserunt dolores itaque. Doloribus reiciendis assumenda vitae. Nobis, facere incidunt. Beatae, dolor.</p>
       </section>
       <section x-data="{isOpen:false}">
-        <button> @click="isOpen = ! isOpen"
+        <button @click="isOpen = ! isOpen">
           bouton 2
         </button>
         <p  x-show="isOpen">Nam dolorem corrupti consequuntur, saepe atque laborum, maiores sed fuga, cupiditate incidunt illum at debitis adipisci asperiores veritatis magnam culpa! Iusto magnam aperiam earum ad ipsam veritatis libero illo enim!</p>
       </section>
       <section x-data="{isOpen:false}">
-        <button> @click="isOpen = ! isOpen"
+        <button  @click="isOpen = ! isOpen">
           bouton 3
         </button>
-        <p  x-show="isOpen">Enim dolores quia nesciunt dolorem sequi, eum repudiandae culpa! Aut, quasi! Aut magni rerum esse molestiae cupiditate! Minus quas omnis, facere unde atque molestias natus saepe nam, quisquam optio debitis!</p>
+        <p x-show="isOpen">Enim dolores quia nesciunt dolorem sequi, eum repudiandae culpa! Aut, quasi! Aut magni rerum esse molestiae cupiditate! Minus quas omnis, facere unde atque molestias natus saepe nam, quisquam optio debitis!</p>
       </section>
     </div>
     <h1>Accordéon avec des booléens</h1>
