@@ -14,7 +14,7 @@
     <div class="accordeon">
       <section x-data="{isOpen:0}">
         <button @click="isOpen = !isOpen">bouton 1</button>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas voluptate, odit quis sed repellat ad iste? Officia assumenda voluptas, distinctio aut minima, eius voluptates, vitae enim perspiciatis minus earum. Asperiores!</p>
+        <p x-show="isOpen">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas voluptate, odit quis sed repellat ad iste? Officia assumenda voluptas, distinctio aut minima, eius voluptates, vitae enim perspiciatis minus earum. Asperiores!</p>
       </section>
     </div>
   </body>
