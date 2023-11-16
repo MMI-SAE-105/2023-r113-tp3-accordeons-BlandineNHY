@@ -43,12 +43,12 @@
 
 <style>
   #accordeon {
-    display: inline-block;
+    display: flex;
     margin: 0px;
     padding: 0px;
   }
 
-  #accordeon li {
+.li {
     width: 107px ;
     overflow: hidden;
     transition: width 0.5s ease;
@@ -60,25 +60,25 @@
   border-radius: 5px;
   }
 
-#accordeon li.actif {
+li.actif {
   width: 317px;
 }
 
-#accordeon li figure {
+.li figure {
   margin: 0px;
   display: flex;
   width: 117px;
 }
 
-#accordeon li figure figcaption {
+.li figure figcaption {
   width: 200px;
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: flex;
   gap: 5px;
 }
 
-#accordeon li figure figcaption {
+.li figure figcaption {
   margin: 0px;
   padding: 0px;
 }
