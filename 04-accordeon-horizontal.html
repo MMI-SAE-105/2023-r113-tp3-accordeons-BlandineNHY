@@ -12,6 +12,7 @@
       margin: 0;
       display: flex;
       width: 117px;
+      height: 100%;
     }
 
     #accordeon {
@@ -56,15 +57,17 @@
 <body>
   <h1>Accordéon horizontal</h1>
   <ul id="accordeon" x-data="{isOpen: 1}">
+
     <li @click="isOpen = 1" :class="{actif:isOpen === 1,}">
       <figure>
-        <img src="https://picsum.photos/100?random=1" alt="" width="102">
+        <img src="https://picsum.photos/100?random=1" alt="" width="102" height="full">
         <figcaption>
           <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
         </figcaption>
       </figure>
     </li>
+
     <li @click="isOpen = 2" :class="{actif:isOpen === 2,}">
       <figure>
         <img src="https://picsum.photos/100?random=2" alt="" width="102">
@@ -74,6 +77,7 @@
         </figcaption>
       </figure>
     </li>
+
     <li @click="isOpen = 3" :class="{actif:isOpen === 3,}">
       <figure>
         <img src="https://picsum.photos/100?random=3" alt="" width="102">
