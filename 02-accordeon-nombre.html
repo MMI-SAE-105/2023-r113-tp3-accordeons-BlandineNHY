@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
-  </head>
-  <body>
-    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-    <div class="accordeon">
-      <section x-data="{isOpen1:0}">
-        <button @click="isOpen1 = !isOpen1">bouton 1</button>
-        <p x-show="isOpen1" x-transition.scale.origin.top>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas similique esse consequatur eius officia soluta, voluptates cupiditate facilis, repudiandae deserunt odit praesentium placeat, suscipit distinctio corporis commodi blanditiis aut autem!</p>
-      </section>
-      <section x-data="{isOpen2:0}">
-        <button @click="isOpen2 = !isOpen2">bouton 2</button>
-        <p x-show="isOpen2">Veritatis, facilis? Dolore atque porro, eligendi quod incidunt soluta numquam nobis, vel possimus pariatur quasi, iste repudiandae eveniet fugiat? Voluptatibus recusandae maiores cupiditate beatae magnam distinctio aspernatur vero vitae quos?</p>
-      </section>
-      <section x-data="{isOpen3:0}">
-        <button @click="isOpen3 = !isOpen3">bouton 3</button>
-        <p x-show="isOpen3">Aliquam delectus, incidunt provident unde sit voluptatum eaque ipsam enim quisquam impedit, hic eum velit placeat odit reprehenderit inventore facere similique deleniti! Nemo magnam porro quisquam natus quasi quod deserunt.</p>
-      </section>
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+</head>
+
+<body>
+  <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+  <div class="accordeon">
+    <section x-data="{isOpen1:0}">
+      <button @click="isOpen1 = !isOpen1">bouton 1</button>
+      <p x-show="isOpen1" x-transition.scale.origin.top>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptas similique esse consequatur eius officia soluta, voluptates cupiditate facilis, repudiandae deserunt
+        odit praesentium placeat, suscipit distinctio corporis commodi blanditiis aut autem!</p>
+    </section>
+    <section x-data="{isOpen2:0}">
+      <button @click="isOpen2 = !isOpen2">bouton 2</button>
+      <p x-show="isOpen2">Veritatis, facilis? Dolore atque porro, eligendi quod incidunt soluta numquam nobis, vel
+        possimus pariatur quasi, iste repudiandae eveniet fugiat? Voluptatibus recusandae maiores cupiditate beatae
+        magnam distinctio aspernatur vero vitae quos?</p>
+    </section>
+    <section x-data="{isOpen3:0}">
+      <button @click="isOpen3 = !isOpen3">bouton 3</button>
+      <p x-show="isOpen3">Aliquam delectus, incidunt provident unde sit voluptatum eaque ipsam enim quisquam impedit,
+        hic eum velit placeat odit reprehenderit inventore facere similique deleniti! Nemo magnam porro quisquam natus
+        quasi quod deserunt.</p>
+    </section>
+  </div>
+</body>
+
 </html>
+<style>
+  body {
+    background-color: rgb(242, 218, 236);
+  }
+
+  button {
+    background-color: #efafef;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  p {
+    background-color: #d0ced2;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+  }
+</style>
